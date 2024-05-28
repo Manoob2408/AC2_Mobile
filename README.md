@@ -3,12 +3,13 @@
 
 ## Emanuela Lopez Ferreira RA:190176
 
-### Segue o vídeo do aplicativo funcionando pois não consegui enviar em conjunto com com o link do github no Canvas. 
+### Segue o vídeo do aplicativo funcionando pois não consegui enviar em conjunto com o link do github no Canvas. 
 
 https://github.com/Manoob2408/AC2_Mobile/assets/69742113/fc3a12aa-87d4-4e88-bba5-06e07dc88774
 
 ### Infelizmente, a única parte que não consegui finalizar foi a busca do CEP no viacep.com.br
-![RbGIF](https://github.com/Manoob2408/AC2_Mobile/assets/69742113/2e7fb0e8-ce9e-4c8e-bb30-76cefa967f01)
+![NopeSadGIF](https://github.com/Manoob2408/AC2_Mobile/assets/69742113/495a482a-1b8b-4677-86e7-62713c2a80ef)
+
 
 
 
