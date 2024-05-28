@@ -14,6 +14,10 @@ public class Aluno {
     private String cidade;
     private String uf;
 
+    public Aluno(int ra, String nome){
+        this.ra = ra;
+        this.nome = nome;
+    }
     public int getId() {
         return id;
     }
@@ -89,5 +93,4 @@ public class Aluno {
     public Aluno() {
     }
 
-    public static ArrayList<Aluno> alunos;
 }

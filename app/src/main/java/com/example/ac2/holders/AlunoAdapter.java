@@ -1,5 +1,6 @@
 package com.example.ac2.holders;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -11,14 +12,16 @@ import com.example.ac2.models.Aluno;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.OkHttpClient;
 
 public class AlunoAdapter extends RecyclerView.Adapter<AlunoHolder> {
-    private ArrayList<Aluno> alunos;
-
-    public AlunoAdapter(ArrayList<Aluno> alunos) {
+    private final List<Aluno> alunos;
+    Context context;
+    public AlunoAdapter(List<Aluno> alunos, Context context) {
         this.alunos = alunos;
+        this.context = context;
     }
 
     @NonNull
@@ -29,21 +32,16 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoHolder> {
 
     }
 
-    public void updateData(ArrayList<Aluno> newAlunos) {
-        alunos = newAlunos;
-    }
-
     @Override
     public void onBindViewHolder(@NonNull AlunoHolder holder, int position) {
-        Aluno aluno = alunos.get(position);
-        holder.textNome.setText(aluno.getNome());
-        holder.textRa.setText(Integer.toString(aluno.getRa()));
-        holder.textCep.setText(aluno.getCep());
-        holder.textLogradouro.setText(aluno.getLogradouro());
-        holder.textComplemento.setText(aluno.getComplemento());
-        holder.textBairro.setText(aluno.getBairro());
-        holder.textCidade.setText(aluno.getCidade());
-        holder.textUf.setText(aluno.getUf());
+        holder.textNome.setText(alunos.get(position).getNome());
+        holder.textRa.setText(Integer.toString(alunos.get(position).getRa()));
+        holder.textCep.setText(alunos.get(position).getCep());
+        holder.textLogradouro.setText(alunos.get(position).getLogradouro());
+        holder.textComplemento.setText(alunos.get(position).getComplemento());
+        holder.textBairro.setText(alunos.get(position).getBairro());
+        holder.textCidade.setText(alunos.get(position).getCidade());
+        holder.textUf.setText(alunos.get(position).getUf());
     }
 
     @Override

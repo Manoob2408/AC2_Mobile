@@ -11,24 +11,24 @@ import com.example.ac2.R;
 
 public class AlunoHolder extends RecyclerView.ViewHolder {
 
-    TextView textNome;
-    TextView textRa;
-    TextView textCep;
-    TextView textLogradouro;
-    TextView textComplemento;
-    TextView textBairro;
-    TextView textCidade;
-    TextView textUf;
+    public TextView textNome;
+    public TextView textRa;
+    public TextView textCep;
+    public TextView textLogradouro;
+    public TextView textComplemento;
+    public TextView textBairro;
+    public TextView textCidade;
+    public TextView textUf;
 
     public AlunoHolder(View item) {
         super(item);
-        textNome = item.findViewById(R.id.textNome);
-        textRa = item.findViewById(R.id.textRa);
-        textCep = item.findViewById(R.id.textCep);
-        textLogradouro = item.findViewById(R.id.textLogradouro);
-        textComplemento = item.findViewById(R.id.textComplemento);
-        textBairro = item.findViewById(R.id.textBairro);
-        textCidade = item.findViewById(R.id.textCidade);
-        textUf = item.findViewById(R.id.textUf);
+        textNome = (TextView) item.findViewById(R.id.textNome);
+        textRa = (TextView) item.findViewById(R.id.textRa);
+        textCep = (TextView) item.findViewById(R.id.textCep);
+        textLogradouro = (TextView) item.findViewById(R.id.textLogradouro);
+        textComplemento = (TextView) item.findViewById(R.id.textComplemento);
+        textBairro = (TextView) item.findViewById(R.id.textBairro);
+        textCidade = (TextView) item.findViewById(R.id.textCidade);
+        textUf = (TextView) item.findViewById(R.id.textUf);
     }
 }
