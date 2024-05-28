@@ -8,8 +8,8 @@
 https://github.com/Manoob2408/AC2_Mobile/assets/69742113/fc3a12aa-87d4-4e88-bba5-06e07dc88774
 
 ### Infelizmente, a única parte que não consegui finalizar foi a busca do CEP no viacep.com.br
+![Uploading PiesekSmutekGIF.gif…]()
 
-![PiesekSmutekGIF](https://github.com/Manoob2408/AC2_Mobile/assets/69742113/679b23af-48eb-4859-a6dd-a1ef8351bff6)
 
 ### Avalie com carinho e ótima semana!!
 ![DayMondayGIF](https://github.com/Manoob2408/AC2_Mobile/assets/69742113/95c07cc5-61f3-482b-9044-9476a4f8c6eb)
