@@ -5,13 +5,16 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.ac2.api.AlunoService;
 import com.example.ac2.api.ApiClient;
 import com.example.ac2.holders.AlunoAdapter;
 import com.example.ac2.models.Aluno;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
@@ -25,12 +28,24 @@ public class MainActivity extends AppCompatActivity {
     AlunoAdapter alunoAdapter;
     AlunoService apiService;
     List<Aluno> listaAlunos;
+    FloatingActionButton btnAdd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerAluno = (RecyclerView) findViewById(R.id.lista);
+        btnAdd = (FloatingActionButton)findViewById(R.id.btnAdd);
         apiService = ApiClient.getAlunoService();
+
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,AlunoActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
     @Override
     protected void onResume() {
